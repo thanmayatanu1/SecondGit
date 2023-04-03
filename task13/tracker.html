@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Expense tracker app with local storage integration</h1>
+    </header>
+
+    <section class="container">
+      <form onsubmit="saveToLocalStorage(event)">
+        <h1>Deliverables</h1>
+        <div class="msg"></div>
+        <div>
+          <label for="name">Expenseamount:</label>
+          <input type="text" id="name" name="username" required/>
+        </div>
+        <div>
+          <label for="email">Choose description:</label>
+          <input type="text" id="email" name="email" required/>
+        </div>
+        <div>
+            <label for="mail">Choose category:</label>
+            <input type="text" id="mail" name="mail" required/>
+          </div>
+          
+        
+        <button>Add Expense</button>
+      </form>
+
+      <ul id='listOfitems'></ul>
+
+      
+    </section>
+    
+
+    <script src="dom.js"></script>
+  </body>
+</html>
